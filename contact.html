@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا · وصفات</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <nav class="navbar" aria-label="القائمة الرئيسية">
+            <div class="logo">وصفات <span>•</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="recipes.html">الوصفات</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">تواصل</a></li>
+                <li><a href="about.html">من نحن</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" aria-label="فتح القائمة" role="button" tabindex="0">
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+        <div class="container">
+            <h1 class="page-title">تواصل معنا</h1>
+
+            <div class="contact-wrap">
+                <!-- نموذج التواصل -->
+                <div class="contact-form">
+                    <h2>أرسل لنا رسالة</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">الاسم</label>
+                            <input type="text" id="name" placeholder="أدخل اسمك" required>
+                            <span class="error-msg" id="nameError">الرجاء إدخال الاسم</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" placeholder="example@mail.com" required>
+                            <span class="error-msg" id="emailError">الرجاء إدخال بريد إلكتروني صحيح</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">الموضوع</label>
+                            <input type="text" id="subject" placeholder="موضوع الرسالة" required>
+                            <span class="error-msg" id="subjectError">الرجاء إدخال الموضوع</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                            <span class="error-msg" id="messageError">يجب أن تكون الرسالة 20 حرفاً على الأقل</span>
+                        </div>
+
+                        <button type="submit" class="btn">إرسال <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+                <!-- معلومات التواصل -->
+                <div class="contact-info">
+                    <h2>معلومات التواصل</h2>
+                    <div>
+                        <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                        <p><i class="fas fa-envelope"></i> info@recipes.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</p>
+                    </div>
+                    <div>
+                        <h4>تابعنا على</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2026 وصفات · جميع الحقوق محفوظة</p>
+        <div class="social-links">
+            <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="footer-tagline">المطبخ الشرقي بنكهة عصرية</p>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="backTop" aria-label="العودة للأعلى"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
